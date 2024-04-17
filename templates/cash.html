@@ -1,0 +1,21 @@
+{% extends "base.html"%} {%block content%}
+<form action="http://127.0.0.1:5000/cash" method="post">
+  <div class="mb-3">
+    <label for="ntd" class="form-label">台幣</label>
+    <input type="number" class="form-control" id="ntd" name="ntd" />
+  </div>
+  <div class="mb-3">
+    <label for="us" class="form-label">美金</label>
+    <input type="number" class="form-control" id="us" name="us" step="0.01" />
+  </div>
+  <div class="mb-3">
+    <label for="note" class="form-label">備註</label>
+    <input type="text" class="form-control" id="note" name="note" />
+  </div>
+  <div class="mb-3">
+    <label for="date" class="form-label">日期</label>
+    <input type="date" class="form-control" id="date" name="date" />
+  </div>
+  <button type="submit" class="btn btn-primary">提交表單</button>
+</form>
+{% endblock %}
